@@ -1,0 +1,195 @@
+
+
+<!--div class="home">
+
+  <h1 class="page-heading">Recent Posts</h1>
+
+  {{ content }}
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>ByWater Solutions</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/sitestyle.css">
+<script src="https://use.typekit.net/sco1mxn.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+<link href='{{ site.baseurl }}/assets/css/reset.css' rel='stylesheet' type='text/css'>
+
+<link href='{{ site.baseurl }}/assets/css/simple-grid.css' rel='stylesheet' type='text/css'>
+
+<script src="https://use.typekit.net/ykn1kle.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="https://use.fontawesome.com/7f1eb31462.js"></script>
+</head>
+<div id='menu'>
+<ul>
+<li>Koha Demo</li>
+<li>Contact Us</li>
+<li>Current Koha Users</li>
+</ul>
+</div>
+<div class='parallax parallax-1' id='opening'>
+<div class='container'>
+<div id='tagline'>
+<div id='logo'>
+<img src='http://media.bywatersolutions.com/newopac/bywaterwhite.png'>
+</div>
+<h1>Koha Support for Libraries</h1></h1>
+<p><span class="subtitle">Empowering libraries to take control of their technology and drive technological innovation</span></p>
+</div>
+<div class='buttons'>
+<div class='ghost_button'>
+<div class='button-icon'><a href="#learn">Learn More</a></div>
+</div>
+<div class='ghost_button'>
+<div class='button-icon'>Current Koha Users</div>
+</div>
+</div>
+<div id='opening_tiles'>
+<div class='first-tile'>
+<h4 class='link'><i class="fa fa-"></i> <a href="https://catalog.bywatersolutions.com/">Koha Demo</a></h4>
+<p>ByWater Solutions offers a fully functional Koha demo to anyone interested in learning more about the Koha open source ILS</p>
+</div>
+<div class='second-tile'>
+<h4><i class="fa fa-globe"></i> What We Do</h4></h4>
+<p>Empower libraries by giving them the technological flexibility and freedom they deserve through the use of open source software with comprehensive and honest support.</p>
+</div>
+<div class='third-tile'>
+<h4><i class="fa fa-globe"></i>Contact Us</h4></h4>
+<p>Feel free to contact us by calling our toll free number 1 (888) 900-8944 or chatting with us below.</p>
+</div>
+</div>
+</div>
+</div>
+<div class='container'>
+<div id='learn'>
+<section class='parallax parallax-2'>
+<div class='descriptive_title'>
+<h1 class='name'></h1>
+<p class='blue_highlight'>Do you believe that you should have control of the quality and functionality of your patron's online library experience?</p>
+<p class='blue_highlight'>Do you believe that library staff should have a say in what features will make their jobs more efficient?</p>
+<h2 class='light-blue'>Choosing ByWater Solutions Means</h2>
+</div>
+<div class='descriptiive_entries'>
+<section>
+<div class='button-container'>
+<div class='button_round aqua_background'>
+<div class='button-text'>
+<span>Freedom</span>
+</div>
+</div>
+<div class='aqua_background square'>You and your library staff control the patron experience, rather than a disconnected software software vendor</div>
+</div>
+</section>
+<section>
+<div class='button-container'>
+<div class='button_round blue2_background'>
+<div class='button-text'>
+<span>Lower Costs</span>
+</div>
+</div>
+<div class='blue2_background square'>Your overall automation costs will be lower and you will be empowered to take control of your technology and drive the direction of your ILS rather than act as a passenger; your technology will be aligned with your organizational goals!</div>
+</div>
+</section>
+<section>
+<div class='button-container'>
+<div class='button_round blue3'>
+<div class='button-text'>
+<span>Community</span>
+</div>
+</div>
+<div class='blue3 square'>By participating.square in the Koha community's forward-thinking and vibrant international member base, you can have a voice regarding what features are added to your system and when you can use them</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+<div class='parallax parallax-3' id='features'>
+<div class='container'>
+<div id='technology'>
+<h1><span class="aqua">LIBRARY TECHNOLOGY</span> <span class="white">FOCUSED ON</span> <span class="redtext">STRATEGY</span> <span class="white">AND</span> <span class="brightblue">INNOVATION</span></h1>
+<h2 class='redtext'>Let ByWater Help You Align Your Technology to Your Strategic Goals</h2>
+<div class='strategy'>
+<div id='data'>
+<ul>
+<li class='redcircle'></li>
+<li>Data Migration & Manipulation</li>
+<li class='description'>Skilled manipulation of library data is the key to a successful migration. Because it is the most important representation of a library's collection, we work closely with each library  to ensure there are no duplicate entries and to consistently use the highest quality records for complete accuracy, identifying and manipulating each record for the correct encoding and diacritical display. In addition, each of our new customers receives a test system during the  migration process to practice with and to be trained on.</li>
+</ul>
+</div>
+<div id='support'>
+<ul>
+<li class='redcircle'></li>
+<li>Expert Anytime Koha Support</li>
+<li class='description'>Quality of support is the most important focus of our company. Our top rated 24/7 support package is completely comprehensive and ensures the best possible Koha experience for our customers. We have the lowest customer to support personnel ratio in the business</li>
+</ul>
+</div>
+<div id='training'>
+<ul>
+<li class='redcircle'></li>
+<li>Comprehensive Koha Training</li>
+<li class='description'>Our company is dedicated to the expert training and implementation of Koha. All ByWater Solutions training sessions are led by professional MLS librarians and accomplished Koha trainers. We provide multiple formats for different learning styles including on-site, hands-on, classroom style learning, on-line presentations and demonstrations, and internally produced training manuals.</li>
+</ul>
+</div>
+</div>
+<h2 class='brightblue'>Your Technology Should Be Innovative; ByWater Can Help</h2>
+<div class='strategy'>
+<div id='data'>
+<ul>
+<li class='bluecircle'></li>
+<li>Custom Koha Installations</li>
+<li class='description'>To ensure the security of your data, ByWater Solutions offers a complete hosted environment on ByWater equipment placed in the virtual networking cloud. This also delivers improved performance for both your staff and your users. Other functions include the maintenance of your Linux server, the management of databases with real-time backups, and the installation of updates and upgrades to both the Linux server and your Koha ILS software. We also have options for installing Koha on local servers at your library. With the correct remote access we could completely manage the installation at your library</li>
+</ul>
+</div>
+<div id='support'>
+<ul>
+<li class='bluecircle'></li>
+<li>Koha Hosting Services</li>
+<li class='description'>ByWater Solutions performs a daily backup of all system data stored on the cloud. This information is saved both on-site. In addition daily backups, we create a mirrored image of the system data and code-base on our servers located at the ByWater main office in California (US based customers only). If you so choose, we can also set up an additional system backup onsite at your library's location and populate that daily for an additional fee.</li>
+</ul>
+</div>
+<div id='training'>
+<ul>
+<li class='bluecircle'></li>
+<li>Custom Koha Development</li>
+<li class='description'>ByWater Solutions fully embraces the ideals and practices of open source software. All custom development sponsored by our customers and completed by our company will be publicly available at all times, even while still in progress, in the ByWater Git repository. After the code has been tested and released to our customer for production use, we then publish the code to the community either in the form of a patch (for smaller code changes) or a pull request from our Git Repo.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id='testimonials'>
+<h1>What Our Customers Are Saying</h1>
+<div class='quotes'>
+<p>We've had a very positive experience from planning to roll out. Even now, we continue to benefit from great customer service, which is of great benefit to us as we do not have a systems librarian. Whatever questions we have, we are confident that the ByWater team and other members in the ByWater community can assist us getting the right information.</p> <span>Oscar Lanza-Galindo, Director, Donald D Watt Library and Information Commons of SIT Graduate InstituteBrattleboro, VT</span></p>
+</div>
+<div class='quotes'>
+<p>We had been using Koha for two years when we decided to explore other options for support and hosting. Switching to ByWater allowed us to have deeper and more flexible support without having to increase our budget. ByWater has been incredibly easy to work with! Our conversion was seamless and fast, and we haven't had any offline time since we switched. The best thing about ByWater is the people. I love getting to know the team that supports our software! Everyone is friendly, down-to-earth, and responsive. We have been so happy with ByWater, and would strongly recommend them to anyone seeking support for their open-source ILS. <span>Nissa Flanagan, Systems and Technical Services Manager, Merrill Memorial Library, Yarmouth, ME</span></p>
+</div>
+</div>
+</div>
+</div>
+</html>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/imagesloaded.js"></script>
+<script src="{{ site.baseurl }}/assets/js/skrollr.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
