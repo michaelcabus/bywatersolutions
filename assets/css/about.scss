@@ -3,9 +3,18 @@
 
 @import "{{ site.theme }}";
 
-ul {
+.recents h1 {
+    background-color: #0d87c7;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    transform: translateY(542%);
+}
 
-  list-style: none;
+.recents {
+ background-image:url("{{ site.baseurl }}/assets/img/mural.png");
+ background-size: cover;
+width: 100%;
 }
 
 .post-header {
@@ -19,6 +28,76 @@ ul {
     transform: translateY(33%);
 }
 
+.top_nav {
+background-color: #f3faf7;
+padding: 20px;
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+}
+
+}
+
+nav.main {
+    background-color: #f3faf7;
+
+    ul {
+        li {
+
+          border-bottom: 2px solid #e7e9e9;
+          margin-top: 70px;
+        }
+
+    }
+}
+
+
+.site-header {
+    border-top: 5px solid #424242;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 55.95px;
+    position: relative;
+    display: none;
+}
+
+.intro_page {
+    display: flex;
+
+
+ul {
+    margin: 0px;
+
+   li {
+
+     a {
+     font-family: "europa";
+     font-weight: 700;
+     color:#000000 !important;
+     font-size: 20px;
+   }
+   }
+
+}
+
+
+}
+.wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+ul {
+
+  list-style: none;
+}
+
 li {
 
   line-height: 1.0;
@@ -30,18 +109,6 @@ h1 {
   font-weight: bold;
   }
 
-  .site-header {
-   background-image: url("http://concrete.bywatersolutions.com/application/files/3015/0412/8651/aarome.png");
-  background-size: cover;
-padding-bottom: 7.2727272727%;
-background-position: center;
-
-
-  .wrapper {
-    background-color:#F7F7F7;
-
-  }
-}
   .post-content h2 {
 
       font-size: 26px;

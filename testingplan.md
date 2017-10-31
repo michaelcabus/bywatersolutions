@@ -2,6 +2,7 @@
 layout: page
 title: Koha Testing Plan
 permalink: /support/koha/
+exclude: true
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">

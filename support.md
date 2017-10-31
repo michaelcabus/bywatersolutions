@@ -2,6 +2,7 @@
 layout: page
 title: Koha Support
 permalink: /support/
+menu: main
 ---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">

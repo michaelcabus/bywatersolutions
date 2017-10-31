@@ -1,18 +1,36 @@
 ---
 layout: page
-title: About
+title: ByWater Solutions
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/about.css">
+<script src="https://use.typekit.net/sco1mxn.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<nav class="top_nav">
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<ul>
+<li><a href="http://model.bywatersolutions.com">Koha Demo</a></li>
+<li><a href="http://ticket.bywatersolutions.com/">Submit a Ticket (Current Koha Customers)</a></li>
+<li><a href="">Contact ByWater Solutions</a></li>
+</ul>
 
+</nav>
 
-[jekyll-organization]: https://github.com/jekyll
+<section class="intro_page">
+
+<nav class="main">
+
+<ul>
+ <li><a href="{{ site.baseurl }}/support/">Koha Support</a></li>
+ <li><a href="{{ site.baseurl }}/education/">Koha Education and Training</a></li>
+ <li><a href="">Partnering With ByWater Solutions</a></li>
+</ul>
+
+</nav>
+
+<section class="recents">
+<h1>What's New in Koha 18.05</h1>
+</section>
+</section>
