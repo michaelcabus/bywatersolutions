@@ -556,7 +556,7 @@
   background-color: #33a1b3; }
 
 body {
-  background-color: #111d39; }
+  background-color: #111d39 !important; }
 
 #opening {
   background: linear-gradient(rgba(240, 250, 253, 0.7), rgba(25, 37, 64, 0.8), rgba(25, 37, 64, 0.8)), url(http://media.bywatersolutions.com/newsite/background.png);

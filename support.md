@@ -30,7 +30,7 @@ menu: main
 <div id='koha_education_nav'>
 <h2><i class="fa fa-university" aria-hidden="true"></i> Koha Education</h2>
 <ul>
-<li><a href="">Koha Testing Plan</a></li>
+<li><a href="{{ site.baseurl }}/support/koha">Koha Testing Plan</a></li>
 <li><a href="">Koha Tutorial Videos</a></li>
 <li><a href="">Koha Training Handouts</a></li>
 <li><a href="">Koha Upgrade Notes</a></li>
