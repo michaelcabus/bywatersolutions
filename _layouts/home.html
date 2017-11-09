@@ -39,6 +39,33 @@
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <script src="https://use.fontawesome.com/7f1eb31462.js"></script>
 </head>
+<section class="hamburger">
+
+<button class="js-menu menu" type="button">
+	<span class="bar"></span>
+</button>
+
+
+
+<img id="logo" src='{{ site.baseurl }}/assets/img/bywaterwhite.png'>
+
+
+<section id="koha_logo">
+<img src='{{ site.baseurl }}/img/kohalogo.png'>
+
+</section>
+
+</section>
+
+<nav id="sidemenu">
+	<ul>
+		<li>Koha Demo</li>
+		<li>About ByWater Solutions</li>
+		<li>Koha Support</li>
+		<li>Koha Education</li>
+	</ul>
+</nav>
+
 <div id='menu'>
 <ul>
 <li>Koha Demo</li>
@@ -49,19 +76,19 @@
 <div class='parallax parallax-1' id='opening'>
 <div class='container'>
 <div id='tagline'>
-<div id='logo'>
+<!--<div id='logo'>
 <img src='http://media.bywatersolutions.com/newopac/bywaterwhite.png'>
-</div>
+</div>-->
 <h1>Koha Support for Libraries</h1></h1>
 <p><span class="subtitle">Empowering libraries to take control of their technology and drive technological innovation</span></p>
 </div>
 <div class='buttons'>
-<div class='ghost_button'>
+<!--<div class='ghost_button'>
 <div class='button-icon'><a href="#learn">Learn More</a></div>
 </div>
 <div class='ghost_button'>
 <div class='button-icon'><a href="{{ site.baseurl }}/about/">Current Koha Users</a></div>
-</div>
+</div>-->
 </div>
 <div id='opening_tiles'>
 <div class='first-tile'>
@@ -76,14 +103,27 @@
 <h4><i class="fa fa-globe"></i>Contact Us</h4></h4>
 <p>Feel free to contact us by calling our toll free number 1 (888) 900-8944 or chatting with us below.</p>
 </div>
+
 </div>
+<div class='buttons'>
+<div class='ghost_button'>
+<div class='button-icon'><a href="#learn">Learn More</a>
+<a href="#learn"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+
+</div>
+
+
+</div>
+
+</div>
+
 </div>
 </div>
 <div class='container'>
 <div id='learn'>
 <section class='parallax parallax-2'>
 <div class='descriptive_title'>
-<h1 class='name'></h1>
+<h1 class='name'>Koha Support for Libraries</h1>
 <p class='blue_highlight'>Do you believe that you should have control of the quality and functionality of your patron's online library experience?</p>
 <p class='blue_highlight'>Do you believe that library staff should have a say in what features will make their jobs more efficient?</p>
 <h2 class='light-blue'>Choosing ByWater Solutions Means</h2>
@@ -93,30 +133,30 @@
 <div class='button-container'>
 <div class='button_round aqua_background'>
 <div class='button-text'>
-<span>Freedom</span>
+<span id="freedom_button">Freedom</span>
 </div>
 </div>
-<div class='aqua_background square'>You and your library staff control the patron experience, rather than a disconnected software software vendor</div>
+<div id="freedom" class='aqua_background square' style="opacity:0">You and your library staff control the patron experience, rather than a disconnected software software vendor</div>
 </div>
 </section>
 <section>
 <div class='button-container'>
 <div class='button_round blue2_background'>
 <div class='button-text'>
-<span>Lower Costs</span>
+<span id="costs_button">Lower Costs</span>
 </div>
 </div>
-<div class='blue2_background square'>Your overall automation costs will be lower and you will be empowered to take control of your technology and drive the direction of your ILS rather than act as a passenger; your technology will be aligned with your organizational goals!</div>
+<div id="cost" style="opacity:0" class='blue2_background square'>Your overall automation costs will be lower and you will be empowered to take control of your technology and drive the direction of your ILS.</div>
 </div>
 </section>
 <section>
 <div class='button-container'>
 <div class='button_round blue3'>
 <div class='button-text'>
-<span>Community</span>
+<span id="community_button">Community</span>
 </div>
 </div>
-<div class='blue3 square'>By participating.square in the Koha community's forward-thinking and vibrant international member base, you can have a voice regarding what features are added to your system and when you can use them</div>
+<div id="community" class='blue3 square' style="opacity:0">By participating in the Koha community you can have a voice regarding what features are added to your system and when you can use them</div>
 </div>
 </section>
 </div>
@@ -187,6 +227,8 @@
 </div>
 </div>
 </div>
+
+
 </html>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/imagesloaded.js"></script>
