@@ -3,12 +3,79 @@
 
 @import "{{ site.theme }}";
 
+.top_nav form {
+    display: flex;
+    justify-content: space-evenly;
+height: 37px;
+}
+
+.partner {
+
+  float: right;
+transform: translateY(242%);
+}
+
+input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    box-shadow: none;
+    color: rgba(0,0,0,.75);
+    display: block;
+    font-family: inherit;
+    font-size: .875rem;
+    height: 2.3125rem;
+    margin: 0 0 1rem 0;
+        margin-bottom: 1rem;
+    padding: .5rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color .15s linear,background .15s linear;
+}
+
+
+.top_nav a {
+
+    color: #ffffff;
+
+}
+
+.site-title {
+display: none;
+
+}
+
+.site-nav {
+display:none;
+
+}
+
+.site-footer {
+    border-top: 1px solid #e8e8e8;
+    padding: 30px 0;
+    background-color: #E1E1E1 !important;
+}
+
+.wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: 90% !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .recents h1 {
     background-color: #0d87c7;
     padding: 10px;
     color: #ffffff;
     font-size: 20px;
-    transform: translateY(542%);
+
+    opacity: .9;
 }
 
 .recents {
@@ -29,8 +96,10 @@ width: 100%;
 }
 
 .top_nav {
-background-color: #f3faf7;
+background-color: #00263e;
 padding: 20px;
+display: flex;
+justify-content: space-between;
 
 ul {
     display: flex;
@@ -39,16 +108,24 @@ ul {
 
 }
 
+
+
+li {
+
+  margin-right: 30px;
+}
+
 }
 
 nav.main {
-    background-color: #f3faf7;
+    background-color: #005C8F;
 
     ul {
         li {
 
           border-bottom: 2px solid #e7e9e9;
           margin-top: 70px;
+          padding: 10px;
         }
 
     }
@@ -56,11 +133,11 @@ nav.main {
 
 
 .site-header {
-    border-top: 5px solid #424242;
+    border-top: none !important;
     border-bottom: 1px solid #e8e8e8;
     min-height: 55.95px;
     position: relative;
-    display: none;
+
 }
 
 .intro_page {
@@ -75,8 +152,8 @@ ul {
      a {
      font-family: "europa";
      font-weight: 700;
-     color:#000000 !important;
-     font-size: 20px;
+     color:#ffffff !important;
+     font-size: 18px;
    }
    }
 

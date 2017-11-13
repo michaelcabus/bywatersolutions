@@ -1,7 +1,12 @@
----
----
+
 
 @import "{{ site.theme }}";
+
+.hamburger section {
+    background-color: #005C8F;
+    height: 92px;
+    width: 8%;
+}
 
 ul {
 

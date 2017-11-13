@@ -1,3 +1,9 @@
+
+
+$(document).ready(function() {
+$(".site-header").prepend('<nav class="top_nav"><ul><li><a href="http://model.bywatersolutions.com">Koha Demo</a></li><li><a href="http://ticket.bywatersolutions.com/">Submit a Ticket (Current Koha Customers)</a></li><li><a href="">Contact ByWater Solutions</a></li></ul><ul><li><form action="/search" method="get" class="flex-row align-items-center mrs mlm hide-small width-search-input cz-color-2236962"><button><i class="fa fa-search" aria-hidden="true"></i></button><input autocomplete="off" name="term" class="mbn cz-color-0 cz-color-16777215 cz-color-13421772" data-type="search-input" type="search"></li></ul></nav>')
+});
+
 /*fading in and out */
 
 var btn1 = document.getElementById("freedom_button");
@@ -22,7 +28,7 @@ function fin() {
   }
 
   function fum() {
-  
+
 
      fadeInCommunity(community);
    }
