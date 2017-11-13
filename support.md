@@ -8,7 +8,7 @@ permalink: /support/
 <link rel="stylesheet" href="https://michaelcabus.github.io/bywatersolutions/assets/main.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/style/style.css">
 
-<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
 <script src="https://use.typekit.net/sco1mxn.js"></script>
