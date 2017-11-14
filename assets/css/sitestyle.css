@@ -1,11 +1,88 @@
 ---
 ---
 
-.button_round {
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.08333s;
+  transition: color 0.25s 0.08333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
 
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #55d7dc;
 }
 
 
+#contact_info span {
+
+    color: #ffffff;
+    font-family: europa;
+    font-weight: bold;
+    margin-right: 30px;
+    padding: 10px;
+
+}
+
+#contact_info span a {
+  color:#ffffff;
+  opacity: .8;
+
+}
+
+#contact_info {
+
+    float: right;
+    display: flex;
+    justify-content: space-evenly;
+
+}
 
 .button_round:hover {
   background: #005C8F;
@@ -63,8 +140,10 @@ border: 1px solid lightblue;
 
 .hamburger {
     background: #00263e;
-    height: 40px;
+    height: 51px;
     display: flex;
+    justify-content: space-between;
+    padding: 13px;
 
 }
 
@@ -79,7 +158,7 @@ border: 1px solid lightblue;
   background: 0;
   float: left;
   margin: 2rem;
-  height: 4.5rem;
+  height: 2.5rem;
   width: 2.5rem;
   z-index: 1;
   outline: 0;
@@ -148,7 +227,7 @@ border: 1px solid lightblue;
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
   transition: transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91), -webkit-transform 0.6s cubic-bezier(0.56, 0.1, 0.34, 0.91);
   padding-top: 6.2rem;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 .menu-open #sidemenu {
   -webkit-transform: translateX(0);
@@ -163,6 +242,9 @@ border: 1px solid lightblue;
   padding: 20px 5px;
   font-size: 20px;
   color:#ffffff;
+  font-family: "bookmania";
+
+font-weight: bold;
 }
 #sidemenu ul li:hover {
   background: #29354D;
@@ -661,9 +743,14 @@ border: 1px solid lightblue;
     display: flex;
     justify-content: space-between; }
     #menu ul li {
+
       color: #ffffff;
       font-family: "proxima-soft-condensed", sans-serif;
-      font-size: 18px; }
+      font-size: 18px;
+      font-family: "bookmania";
+      font-weight: bold;
+
+  }
 
 .parallax {
   height: 100%;
@@ -728,6 +815,14 @@ border: 1px solid lightblue;
 body {
   background-color: #111d39 !important; }
 
+  #tagline h1 img {
+
+      transform: none;
+      padding-bottom: 30px;
+      margin: 0px;
+
+  }
+
 #opening {
   background: linear-gradient(rgba(240,250,253,0.7), rgba(25,37,64,0.7), rgba(25,37,64,0.7)),url(http://media.bywatersolutions.com/newsite/background.png);
   background-position: center !important;
@@ -739,17 +834,26 @@ body {
     width: 241px; }
   #opening #tagline {
     margin-top: 15%;
-    width: 677px;
+    width: 100%;
     margin: 0 auto;
     transform: translateY(60%);
-    background: -webkit-linear-gradient(bottom, #005C8F 0%, #005C8F 17%, rgba(25, 37, 64, 0) 100%);
+    background: #f3faf7;
+    opacity: .8;
 
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', endColorstr='#001cbad5',GradientType=0 );
   }
+
+  #tagline img {
+
+    margin: 0 auto;
+    transform: translateX(124%);
+    padding: 10px;
+  }
+
     #opening #tagline h1, #opening #tagline .descriptive_tile h1 {
       font-family: "europa", sans-serif;
-      color: #ffffff;
+      color: #002d61;
       text-transform: uppercase;
       font-size: 40px;
       font-weight: 400;
