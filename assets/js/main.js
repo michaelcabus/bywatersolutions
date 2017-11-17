@@ -1,6 +1,7 @@
 // Hide the element. Doing this here will prevent the elements from disappering if JS is disabled.
 $('.fade-content > *').css({'opacity':'0', 'transform': 'translateY(' + 2 + 'em)'});
 
+
 // Trigger fade in as window scrolls
 $(window).on('scroll load', function(){
   $('.fade-content > *').each( function(i){
@@ -12,7 +13,34 @@ $(window).on('scroll load', function(){
       $(this).css({'opacity':'0', 'transform': 'translateY(' + 2 + 'em)'});
     }
   });
-});
+  });
+  $(window).on('scroll load', function(){
+
+  $('.animate-content > *').each( function(i){
+    var bottom_of_object = $(this).offset().top + $(this).outerHeight()/8;
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
+    if( bottom_of_window > bottom_of_object ){
+      (function($) {
+      var speed = 500000;
+      var container =  $('.animate-content');
+      container.each(function() {
+          var elements = $(this).children();
+          elements.each(function() {
+              var elementOffset = $(this).offset();
+              var offset = elementOffset.left*10 + elementOffset.top;
+              var delay = parseFloat(offset/speed).toFixed(50);
+              $(this)
+                  .css("-webkit-animation-delay", delay+'s')
+                  .css("-o-animation-delay", delay+'s')
+                  .css("animation-delay", delay+'s')
+                  .addClass('animated');
+          });
+      });
+  })(jQuery);
+    }
+  });
+    });
+
 
 $(document).ready(function() {
 $(".site-header").prepend('<nav class="top_nav"><ul><li><a href="http://model.bywatersolutions.com">Koha Demo</a></li><li><a href="http://ticket.bywatersolutions.com/">Submit a Ticket (Current Koha Customers)</a></li><li><a href="">Contact ByWater Solutions</a></li></ul><ul><li><form action="/search" method="get" class="flex-row align-items-center mrs mlm hide-small width-search-input cz-color-2236962"><button><i class="fa fa-search" aria-hidden="true"></i></button><input autocomplete="off" name="term" class="mbn cz-color-0 cz-color-16777215 cz-color-13421772" data-type="search-input" type="search"></li></ul></nav>')

@@ -1,8 +1,73 @@
 ---
 ---
 
+.display-animation > * {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+ .animated {
+  -webkit-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  -o-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+
+}
+.no-js .display-animation > * {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+@keyframes display {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    opacity: 100;
+  }
+}
+@-o-keyframes display {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-ms-keyframes display {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes display {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes display {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+
+
 .card {
-  
+
   border-radius: 5px;
   box-shadow: 0px .125em .25em rgba(0,0,0,.25);
 }
@@ -91,7 +156,7 @@ font-family: "bookmania";
 }
 
 .draw-border {
-  box-shadow: inset 0 0 0 4px #58afd1;
+  box-shadow: inset 0 0 0 4px #87b5e4;;
   color: #58afd1;
   -webkit-transition: color 0.25s 0.08333s;
   transition: color 0.25s 0.08333s;
@@ -120,7 +185,7 @@ font-family: "bookmania";
   color: #ffe593;
 }
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color: #ffe593;
+  border-color: #87b5e4;
   -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
   transition: border-color 0s, width 0.25s, height 0.25s;
   width: 100%;
@@ -1053,12 +1118,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', end
   font-weight: 400;
   text-align: center;
   padding: 50px;
-  margin-top: 100px; }
+   }
 .descriptive_title .blue_highlight {
   font-family: "europa",sans-serif;
   color: #87b5e4;
   font-size: 24px;
-  margin-bottom: 80px; }
+   }
 .descriptive_title h2 {
   font-family: "proxima-soft-condensed", sans-serif;
   text-align: center;
@@ -1075,7 +1140,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', end
   .button-container .button_round {
     height: 300px;
     border-radius: 50%;
-    width: 300px; }
+    width: 300px;
+    color: #212121;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  opacity: 0;
+  }
   .button-container .button-text {
      text-align: center;
      line-height: 8em;
