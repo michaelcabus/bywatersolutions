@@ -1,6 +1,47 @@
 ---
 ---
 
+.card {
+  
+  border-radius: 5px;
+  box-shadow: 0px .125em .25em rgba(0,0,0,.25);
+}
+.card:hover {
+  transform: translateY(-.25em);
+  box-shadow: 0 .25em 1em rgba(0,0,0,.5);
+}
+.fade-content > *{transition: ease opacity .25s, ease transform .25s;}
+
+/* Offsets timing for groups of three. This must be adjusted if there are more or less than three element per row.*/
+.fade-content > *:nth-child(3n+2) {transition-delay: .1s;}
+.fade-content > *:nth-child(3n+3) {transition-delay: .2s;}
+
+
+
+#customers {
+
+  background-color: #37b0ad
+}
+
+.customer_content {
+    padding: 20px;
+}
+
+.customer_content h1 {
+ color:#ffffff;
+ font-size:36px;
+ font-family:"europa", sans-serif;
+ font-weight: bold;
+
+}
+
+.customer_content h2 {
+
+  font-family: "bookmania";
+  color:#ffffff;
+  font-size: 36px;
+}
+
 #bywater_team {
     background-color: #ffffff;
     margin-top:120px;
@@ -17,8 +58,7 @@
 background-image:url({{ site.baseurl }}/img/staff.png);
 
 height: 823px;
--webkit-filter: grayscale(1);
-filter: grayscale(1);
+
 background-repeat: no-repeat;
 }
 
@@ -360,10 +400,14 @@ font-weight: bold;
   background: linear-gradient(130deg, #07d9a3, #048fee); }
   #testimonials span {
     color: blue; }
-  #testimonials .quotes {
-    color: #ffffff;
-    font-style: italic !important;
-    padding: 20px; }
+    #testimonials .quotes {
+      color: #ffffff;
+      font-style: italic !important;
+      padding: 20px;
+      background-color: #ffffff;
+      margin-bottom: 20px;
+      opacity: .8;
+  }
   #testimonials h1 {
     text-align: center;
     font-weight: 300 !important;
@@ -1033,17 +1077,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', end
     border-radius: 50%;
     width: 300px; }
   .button-container .button-text {
-    position: absolute;
-    top: 29%;
-    left: 43%;
-    transform: translate(-45%, -55%);
+     text-align: center;
+     line-height: 8em;
     font-size: 33px;
     font-family: "Open Sans",sans-serif; }
     .button-container .button-text span {
       color: #ffffff; }
 
 #features {
-  background-image: url("http://concrete.bywatersolutions.com/application/files/1915/0397/4497/backgroundcircles.png");
+
   font-family: "europa", sans-serif; }
   #features #technology {
     margin-top: 60px; }
