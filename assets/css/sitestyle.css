@@ -982,7 +982,7 @@ body {
   }
 
 #opening {
-  background: linear-gradient(rgba(240,250,253,0.7), rgba(25,37,64,0.7), rgba(25,37,64,0.7)),url(http://media.bywatersolutions.com/newsite/background.png);
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7), rgba(25,37,64,0.7)),url(http://media.bywatersolutions.com/newsite/background.png);
   background-position: center !important;
   height: 889px;
   background-repeat: no-repeat;
@@ -994,9 +994,9 @@ body {
     margin-top: 15%;
     width: 100%;
     margin: 0 auto;
-    transform: translateY(60%);
-    background: #f3faf7;
-    opacity: .8;
+    transform: translateY(30%);
+
+
 
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', endColorstr='#001cbad5',GradientType=0 );
@@ -1044,25 +1044,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', end
     #opening .buttons .ghost_button {
 
       position: relative;
-      background-image: none;
-      border: none;
-      outline: none;
-      color: #ffffff;
-      font-size: 20px;
-      letter-spacing: 1px;
-      cursor: pointer;
-      border-radius: 30px;
-      transition: all ease-out .5s;
-      text-align: center;
-      opacity: .8;
-      padding: 27px;
-      -webkit-transition: background-color 2s;
-      transition: background-color 2s;
-      -moz-animation: button-highlight 15s infinite;
-      /* Firefox */
-      -webkit-animation: button-highlight 15s infinite;
-      /* Safari and Chrome */
-      margin:0 auto;
+
+  background-image: none;
+
+  border: none;
+
+  outline: none;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  border-radius: 30px;
+
+  transition: all ease-out .5s;
+
+  text-align: center;
+
+  opacity: .8;
+
+  padding: 0px;
+
+  -webkit-transition: background-color 2s;
+
+  transition: background-color 2s;
+
+  -moz-animation: button-highlight 15s infinite;
+
+  -webkit-animation: button-highlight 15s infinite;
+
+  margin: 0 auto;
+
+  background-color: #00263e !important;
     }
       #opening .buttons .ghost_button a {
         color: #ffffff;
@@ -1070,13 +1087,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ecfa', end
          font-size:20px;}
     #opening .buttons .ghost_button:hover {
        }
-    #opening .buttons .ghost_button .button-icon {
-      margin-right: .55rem;
-      font-size: 16px;
-      color: #ffffff;
-      opacity: .8;
-      font-family: "europa", sans-serif;
-      text-transform: uppercase; }
+       #opening .buttons .ghost_button .button-icon {
+
+         margin-right: .55rem;
+         font-size: 16px;
+         color: black !important;
+         opacity: .8;
+         font-family: "europa", sans-serif;
+         text-transform: uppercase;
+
+         padding: 10px;
+
+     }
       #opening #opening_tiles {
 
         transform: translateY(38%);
